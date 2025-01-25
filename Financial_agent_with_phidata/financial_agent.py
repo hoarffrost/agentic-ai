@@ -1,4 +1,4 @@
-# Building a financial agent/analyst : a chatbot
+# Building a financial agent/analyst
 # Like if someone asks, "hey, can you summarise and give recommandation on the nvidia stock?"
 # What this chatbot would do is:
 #  1. go to the agents, there are multiple agent to do different tasks.
@@ -15,10 +15,6 @@ from phi.tools.yfinance import YFinanceTools
 load_dotenv()
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-
-"""
- 
-"""
 
 financial_agent = Agent(
     name="Financial Analyst",
